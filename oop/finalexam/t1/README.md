@@ -51,4 +51,5 @@ for (int n : list1) {
     // else: index is invalid, so skip
 }
 
-![Screenshot](images/Screenshot(81).png)
+![Screenshot](screenshot_81.png)
+
