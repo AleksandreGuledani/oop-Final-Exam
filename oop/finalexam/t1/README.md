@@ -30,11 +30,20 @@ list2 = [..., "hez", "xky", ...] // assume xky is at index 8
 → result = "xky7"
 → list3 = ["xky7"]
 
-Error Handling: 
 
-If an index n + 1 from list1 goes beyond the size of list2, the program:
-Does not crash
-Skips that entry and continues with the rest of the list
+## Error Handling
+
+This program checks if the calculated index is valid. If not, it skips the entry instead of crashing.
+
+```java
+// Example code showing the error handling:
+for (int n : list1) {
+    int index = n + 1;
+    if (index >= 0 && index < list2.size()) {
+        list3.add(list2.get(index) + n);
+    }
+    // else skip invalid index
+}
 
 ## 💡 Example with Error Handling
 
@@ -51,5 +60,4 @@ for (int n : list1) {
     // else: index is invalid, so skip
 }
 
-![Screenshot](Screenshot_81.png)
-
+![Screenshot](images/Screenshot(81).png)
